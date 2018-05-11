@@ -1,0 +1,30 @@
+<html>
+<head>
+    <style>
+    input[type='text'] , input[type='number'] {
+        border-top-left-radius:5px;
+        border-bottom-right-radius:5px;
+        width:100px;
+        height:30px;
+    }
+    input[type='submit'] {
+        width:100px;
+        background-color:green;
+        border:none;
+    }
+    </style>
+</head>
+<body>
+<font color="green">Login Success   </font><br>
+<font color="blue"> Welcome ${uname}</font><br>
+<form method="POST" action="submitFeedback">
+<table>
+    <tr><td colspan="2">Let us know your feedback</td></tr>
+    <tr><td>Name</td><td><input type="text" name="name"/></td></tr>
+    <tr><td>Mob No</td><td><input type="number" name="mobno"/></td></tr>
+    <tr><td>Comment</td><td><input type="text" name="comment"/></td></tr>
+    <tr><td></td><td><input type="submit" value="Submit"/></td></tr>
+</table>
+</form>
+</body>
+</html>
